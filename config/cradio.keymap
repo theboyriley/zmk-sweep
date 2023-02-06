@@ -19,10 +19,10 @@
 
         1 {
             bindings = <
-            &kp ESC     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
-            &kp TAB     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to 2
-                                                &to 0       &trans      &trans      &to 3
+            &kp ESC     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp ASTRK   &kp NUHS    &kp BSPC
+            &kp TAB     &kp EXCL    &trans      &trans      &kp LPAR    &kp LPAR    &trans      &trans      &kp SQT      &kp RET
+            &kp NUBS    &trans      &trans      &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &trans      &trans      &to 2
+                                                &to 0       &trans      &kp RALT    &to 3
             >;
         };
 
