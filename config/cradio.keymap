@@ -19,8 +19,8 @@
 
         1 {
             bindings = <
-            &kp N1      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
+            &kp ESC     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
+            &kp TAB     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
             &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to 2
                                                 &to 0       &trans      &trans      &to 3
             >;
@@ -28,18 +28,18 @@
 
         2 {
             bindings = <
-            &kp N2      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &kp ESC     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
+            &kp TAB     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to 3
                                                 &to 0       &trans      &trans      &to 1
             >;
         };
 
         3 {
             bindings = <
-            &kp N3      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to 2
+            &kp ESC     &trans      &trans      &trans      &trans      &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC
+            &kp TAB     &trans      &trans      &trans      &trans      &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RET
+            &trans      &trans      &trans      &trans      &trans      &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &to 2
                                                 &to 0       &trans      &trans      &to 1
             >;
         };
