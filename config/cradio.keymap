@@ -5,37 +5,37 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEF 0
+#define LOWER   1
+#define RAISE   2
 
 / {
-    behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        0 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp SPACE  &kp LSHFT      &kp RCTRL  &lt 1
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P
+            &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI
+            &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
+                                                &kp SPACE   &kp LSHFT   &kp RCTRL   &tog LOWER
+            >;
+        };
+
+        1 {
+            bindings = <
+            &kp N1      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                                                &tog DEF    &trans      &trans      &tog RAISE
+            >;
+        };
+
+        2 {
+            bindings = <
+            &kp N2      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                                                &tog DEF    &trans      &trans      &trans
             >;
         };
     };
