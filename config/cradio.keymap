@@ -19,19 +19,28 @@
 
         1 {
             bindings = <
-            &kp N1      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-                                                &tog 0    &trans      &trans      &tog 2
+            &kp N1      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &tog 2
+                                                &tog 0      &trans      &trans      &tog 3
             >;
         };
 
         2 {
             bindings = <
-            &kp N2      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+            &kp N2      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
             &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-                                                &tog 0    &trans      &trans      &trans
+                                                &tog 0      &trans      &trans      &tog 1
+            >;
+        };
+
+        3 {
+            bindings = <
+            &kp N3      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp BSPC
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp RET
+            &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &tog 2
+                                                &tog 0      &trans      &trans      &tog 1
             >;
         };
     };
