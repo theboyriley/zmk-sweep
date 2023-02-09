@@ -31,9 +31,9 @@
 
         1 {
             bindings = <
-            &kp ESC     &trans      &trans      &trans      &trans      &trans      &trans      &kp INS     &kp DEL     &kp BSPC
-            &kp TAB     &trans      &trans      &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RET
-            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp RSHFT
+            &kp ESC     &none       &none       &none       &none       &none       &none       &kp INS     &kp DEL     &kp BSPC
+            &kp TAB     &none       &none       &none       &none       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RET
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp RSHFT
                                                 &none       &none       &to 3       &to 2
             >;
         };
@@ -41,7 +41,7 @@
         2 {
             bindings = <
             &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp PLUS    &kp EQUAL
-            &kp NUBS    &kp PIPE2   &kp GRAVE   &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &trans      &kp AT      &kp TILDE2
+            &kp NUBS    &kp PIPE2   &kp GRAVE   &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &none       &kp AT      &kp TILDE2
             &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &kp LPAR    &kp RPAR    &kp UNDER   &kp MINUS   &kp SQT     &kp NUHS
                                                 &mo 1       &to 0       &to 3       &to 2
             >;
@@ -49,9 +49,9 @@
 
         3 {
             bindings = <
-            &trans      &trans      &trans      &trans      &trans      &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC
-            &to 4       &trans      &trans      &trans      &trans      &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RET
-            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &trans      &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &trans
+            &none       &none       &none       &none       &none       &none       &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC
+            &to 4       &none       &none       &none       &none       &none       &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RET
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &none
                                                 &mo 1       &to 0       &to 3       &to 2
             >;
         };
