@@ -49,8 +49,8 @@
 
         3 {
             bindings = <
-            &kp ESC     &kp BT_CLR &kp BT_SEL 0 &kp BT_SEL 2 &kp BT_SEL 3 &kp F1      &kp F2      &kp F3      &kp F4      &kp BSPC
-            &kp TAB     &none       &none       &none       &none       &kp F5      &kp F6      &kp F7      &kp F8      &kp RET
+            &kp ESC     &kp BT_CLR  &none       &none       &kp BT_NXT  &kp F1      &kp F2      &kp F3      &kp F4      &kp BSPC
+            &kp TAB     &none       &none       &none       &kp BT_PRV  &kp F5      &kp F6      &kp F7      &kp F8      &kp RET
             &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp F9      &kp F10     &kp F11     &kp F12     &kp RSHFT
                                                 &to 0       &trans      &trans      &trans
             >;
