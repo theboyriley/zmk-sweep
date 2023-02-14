@@ -78,8 +78,8 @@
             bindings = <
             &kp ESC     &kp CAPS    &none       &none       &none       &none       &none       &kp INS     &kp DEL     &kp BSPC
             &kp TAB     &none       &none       &none       &none       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RET
-            &none       &none       &none       &none       &kp LGUI    &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp RSHFT
-                                                &none       &trans       &trans      &trans
+            &kp LCTRL   &kp LGUI    &kp LALT    &none       &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp RSHFT
+                                                &none       &trans      &trans      &trans
             >;
         };
     };
