@@ -25,7 +25,7 @@
             &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P
             &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI
             &hm LSHFT Z &hm LCTRL X &hm LGUI C  &hm LALT V  &kp B       &kp N       &hm LALT M  &hm RGUI COMMA &hm RCTRL DOT  &hm RSHFT FSLH
-                                                &kp SPACE   &mo 4       &to 2       &to 1
+                                                &mo 4       &kp SPACE   &to 2       &to 1
             >;
         };
 
@@ -34,7 +34,7 @@
             &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp PLUS    &kp EQUAL
             &kp NUBS    &kp PIPE2   &kp GRAVE   &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &none       &kp AT      &kp TILDE2
             &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &kp LPAR    &kp RPAR    &kp UNDER   &kp MINUS   &kp SQT     &kp NUHS
-                                                &to 0       &trans      &trans      &trans
+                                                &trans      &to 0      &trans      &trans
             >;
         };
 
@@ -43,7 +43,7 @@
             &kp ESC     &none       &none       &none      &kp KP_MINUS &kp KP_PLUS &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC
             &kp TAB     &to 3       &none       &none   &kp KP_MULTIPLY &kp KP_DOT  &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RET
             &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT   &kp KP_SLASH &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp RSHFT
-                                                &to 0       &trans      &trans      &trans
+                                                &trans      &to 0       &trans      &trans
             >;
         };
 
@@ -52,7 +52,7 @@
             &kp ESC     &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &kp F1      &kp F2      &kp F3      &kp F4      &kp BSPC
             &kp TAB     &none       &none       &none       &none       &kp F5      &kp F6      &kp F7      &kp F8      &kp RET
             &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp F9      &kp F10     &kp F11     &kp F12     &kp RSHFT
-                                                &to 0       &trans      &trans      &trans
+                                                &trans      &to 0       &trans      &trans
             >;
         };
 
