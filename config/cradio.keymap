@@ -85,9 +85,9 @@
 
         4 {
             bindings = <
-            &kp ESC     &none       &none       &none       &kp LG(L)   &none       &none       &kp INS     &kp DEL     &kp BSPC
-            &kp TAB     &none       &none       &none     &kp LA(SPACE) &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp RET
-            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp RSHFT
+            &kp ESC     &kp LC(LA(DEL)) &none   &none       &none       &none       &none       &kp INS     &kp DEL     &kp BSPC
+            &kp TAB     &none     &none &kp LC(LA(GRAVE)) &kp LA(SPACE) &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp RET
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &kp LG(L)   &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp RSHFT
                                                 &none       &trans      &trans      &trans
             >;
         };
