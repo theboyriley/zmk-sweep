@@ -69,16 +69,16 @@
             bindings = <
             &kp ESC     &none       &none       &none      &kp KP_MINUS &kp KP_PLUS &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp BSPC
             &kp TAB     &to 3       &none       &none   &kp KP_MULTIPLY &kp KP_DOT  &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RET
-            &none       &none       &none       &none      &kp KP_SLASH &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp RSHFT
-                                                &nm 4 0    &trans      &trans      &trans
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT  &kp KP_SLASH  &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp RSHFT
+                                                &nm 4 0     &trans      &trans      &trans
             >;
         };
 
         3 {
             bindings = <
-            &kp ESC     &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &kp F1      &kp F2      &kp F3      &kp F4      &kp BSPC
+            &kp ESC  &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &kp F1      &kp F2      &kp F3      &kp F4      &kp BSPC
             &kp TAB     &none       &none       &none       &none       &kp F5      &kp F6      &kp F7      &kp F8      &kp RET
-            &none       &none       &none       &none       &none       &kp F9      &kp F10     &kp F11     &kp F12     &kp RSHFT
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp F9      &kp F10     &kp F11     &kp F12     &kp RSHFT
                                                 &nm 4 0     &trans      &trans      &trans
             >;
         };
@@ -86,8 +86,8 @@
         4 {
             bindings = <
             &kp ESC &kp LC(LA(DEL)) &kp LG(L)   &none &kp LC(LA(GRAVE)) &none       &none       &kp INS     &kp DEL     &kp BSPC
-            &kp TAB     &none       &none       &none  &kp LA(SPACE)    &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp RET
-            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp RSHFT
+            &kp TAB     &none       &none       &none  &kp LA(SPACE)    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RET
+            &kp LSHFT   &kp LCTRL   &kp LGUI    &kp LALT    &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp RSHFT
                                                 &none       &trans      &trans      &trans
             >;
         };
